@@ -1,0 +1,13 @@
+Spring + MyBatis Maven Project Template for Standalone Application.
+
+Sample Table.
+
+CREATE TABLE USER (
+        ID BIGINT NOT NULL AUTO_INCREMENT,
+        USER_NM VARCHAR(50) NOT NULL,
+        PASSWD VARCHAR(50) NOT NULL,
+        NM VARCHAR(50) NOT NULL,
+        PRIMARY KEY (ID)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+This file was modified by IntelliJ IDEA 12.0 for binding GitHub repository
