@@ -59,7 +59,7 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
-    <context:component-scan base-package="kr.co.cloudine"/>
+    <context:component-scan base-package="io.cloudine"/>
 
     <!-- ========================= RESOURCE BUNDLE DEFINITION ========================= -->
 

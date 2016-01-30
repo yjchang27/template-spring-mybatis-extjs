@@ -39,7 +39,7 @@
     <!-- ========================= -->
 
     <listener>
-        <listener-class>kr.co.cloudine.template.standalone.logging.LogbackConfigListener</listener-class>
+        <listener-class>io.cloudine.template.esm.logging.LogbackConfigListener</listener-class>
     </listener>
 
     <listener>

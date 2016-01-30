@@ -3,10 +3,10 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="kr.co.cloudine.template.standalone.domain.User" alias="user"/>
+		<typeAlias type="io.cloudine.template.esm.domain.User" alias="user"/>
 	</typeAliases>
 
 	<mappers>
-		<mapper resource="kr/co/cloudine/template/standalone/repository/user-mapper.xml"/>
+		<mapper resource="io/cloudine/template/esm/repository/user-mapper.xml"/>
 	</mappers>
 </configuration>

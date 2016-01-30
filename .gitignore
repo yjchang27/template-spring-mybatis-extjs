@@ -1,3 +1,14 @@
+# IntelliJ
+*.iml
+idea
+.idea/
+.idea/*
+
+# Java
+target
+target/
+target/*
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

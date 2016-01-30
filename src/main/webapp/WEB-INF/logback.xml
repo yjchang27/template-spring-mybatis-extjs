@@ -11,8 +11,8 @@
     <property name="EXCEPTION_LOG_FILE" value="${catalina.home}/logs/exception.log"/>
     <property name="POOL_LOG_FILE" value="${catalina.home}/logs/pool.log"/>
 
-    <conversionRule conversionWord="clr" converterClass="kr.co.cloudine.template.standalone.logging.ColorConverter"/>
-    <conversionRule conversionWord="wex" converterClass="kr.co.cloudine.template.standalone.logging.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="clr" converterClass="io.cloudine.template.esmlogging.ColorConverter"/>
+    <conversionRule conversionWord="wex" converterClass="io.cloudine.template.esm.logging.WhitespaceThrowableProxyConverter"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -59,7 +59,7 @@
         </triggeringPolicy>
     </appender>
 
-    <logger name="kr.co.cloudine" level="DEBUG"/>
+    <logger name="io.cloudine" level="DEBUG"/>
 
     <logger name="org.hibernate.validator.internal.util.Version" level="WARN"/>
     <logger name="org.activiti" level="INFO"/>
