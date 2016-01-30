@@ -11,7 +11,7 @@
     <property name="EXCEPTION_LOG_FILE" value="${catalina.home}/logs/exception.log"/>
     <property name="POOL_LOG_FILE" value="${catalina.home}/logs/pool.log"/>
 
-    <conversionRule conversionWord="clr" converterClass="io.cloudine.template.esmlogging.ColorConverter"/>
+    <conversionRule conversionWord="clr" converterClass="io.cloudine.template.esm.logging.ColorConverter"/>
     <conversionRule conversionWord="wex" converterClass="io.cloudine.template.esm.logging.WhitespaceThrowableProxyConverter"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
