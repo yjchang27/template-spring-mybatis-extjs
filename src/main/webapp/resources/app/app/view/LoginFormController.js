@@ -10,7 +10,7 @@ Ext.define('App.view.LoginFormController', {
         console.log(passwordField.getValue());
 
         Ext.Ajax.request({
-            url: "/login.do",
+            url: "/example/login.json",
             method: "GET",
             params: {
                 "username": this.lookupReference('username').getValue(),

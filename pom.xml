@@ -22,7 +22,7 @@
         <spring.security.version>3.2.5.RELEASE</spring.security.version>
 
         <!-- JSON and XML -->
-        <jackson.version>2.7.0</jackson.version>
+        <jackson.version>2.6.4</jackson.version>
         <jaxb.version>2.1.13</jaxb.version>
 
         <!-- MyBATIS -->
