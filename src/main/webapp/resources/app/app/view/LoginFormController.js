@@ -16,11 +16,17 @@ Ext.define('App.view.LoginFormController', {
                 "username": this.lookupReference('username').getValue(),
                 "password": this.lookupReference('password').getValue()
             },
+            // HTTP 프로토콜 상에서 200
             success: function (result, request) {
                 var jsonData = Ext.util.JSON.decode(result.responseText);
-                console.info(result.responseText);
-                console.info(jsonData);
+
+                if (jsonData.success) {
+                    Ext.Msg.alert("요청처리 성공 Username : ", jsonData.map.username);
+                } else {
+                    Ext.Msg.alert("요청처리 실패");
+                }
             },
+            // HTTP 프로토콜 상에서 에러가 발생한 경우
             failure: function (result, request) {
                 Ext.Msg.alert("Failed", result.responseText);
             }

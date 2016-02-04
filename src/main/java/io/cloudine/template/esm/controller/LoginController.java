@@ -23,8 +23,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class LoginController {
 
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
@@ -32,6 +33,10 @@ public class LoginController {
     @RequestMapping("/login")
     public Response login(@RequestParam String username, @RequestParam String password) {
         logger.debug("Login Username : {}, Password : {}", username, password);
-        return new Response();
+        Response response = new Response();
+        response.setSuccess(true);
+        response.getMap().put("username", username);
+        response.getMap().put("password", password);
+        return response;
     }
 }
