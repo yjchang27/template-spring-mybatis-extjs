@@ -24,7 +24,7 @@
 	<!-- 3. Select Statement -->
 	<!-- ==================================================================================== -->
 
-	<select id="select" parameterType="string" resultMap="userMap">
+	<select id="select" parameterType="integer" resultMap="userMap">
 		SELECT * FROM USER
 		<include refid="wherePK"/>
 	</select>
@@ -33,7 +33,7 @@
 	<!-- 3. Exist Statement -->
 	<!-- ==================================================================================== -->
 
-	<select id="exist" parameterType="string" resultType="Integer">
+	<select id="exist" parameterType="integer" resultType="Integer">
 		SELECT COUNT(*) FROM USER
 		<include refid="wherePK"/>
 	</select>
@@ -69,7 +69,7 @@
 	<!-- 6. Delete Statements -->
 	<!-- ==================================================================================== -->
 
-	<delete id="delete" parameterType="string">
+	<delete id="delete" parameterType="integer">
 		DELETE FROM USER
 		<include refid="wherePK"/>
 	</delete>

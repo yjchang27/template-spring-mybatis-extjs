@@ -43,8 +43,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean refresh(User user) {
         boolean result = userRepository.update(user) > 0;
-        System.out.println(result);
-        throw new RefreshFailureException("Transaction Failed");
+        if (result) {
+            return result;
+        } else {
+            throw new RefreshFailureException("Transaction Failed");
+        }
     }
 
 }
